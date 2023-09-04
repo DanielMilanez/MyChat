@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyChat</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="screen">
+        <img src="scanlines.png" id="scan" style="pointer-events: none;"> <!-- Adicionando pointer-events: none; -->
+        <div id="content">
+            <h1>LOGIN</h1>
+            <p>Acesse sua conta para continuar<a class="marca">|</a></p>
+            <div class="login">
+                <form action="processar_login.php" method="POST">
+                    <label for="username">Nome de Usuário:</label>
+                    <input type="text" id="username" name="username" required>
+                    <br>
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" required>
+                    <br>
+                    <button type="submit" class="enter">Entrar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

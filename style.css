@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'dogicabold';
+    src: url('dogicabold.otf') format('opentype'), url('dogicabold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0; 
+    padding: 0; 
+    background-color: #283018;
+}
+
+#scan {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 90%;
+    margin: 0; 
+    opacity: 35%;
+}
+
+#content {
+    font-family: dogicabold;
+    padding: 50px;
+    color: greenyellow;
+    font-size: 14px;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.marca {
+    animation: blink .5s infinite;
+}
+
+.login{
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    color: greenyellow;
+}
+
+p {
+    color: greenyellow;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: greenyellow;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 200px; /* Largura reduzida para 200px */
+    height: 10px; /* Altura reduzida para 30px */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    background-color: darkolivegreen;
+    color: white;
+    padding: 20px 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: dogicabold;
+}
+
+button:hover {
+    background-color: #84c600;
+}
